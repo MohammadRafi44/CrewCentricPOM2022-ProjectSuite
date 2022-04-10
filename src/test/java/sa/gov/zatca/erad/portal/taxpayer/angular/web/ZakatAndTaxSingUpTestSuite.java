@@ -15,9 +15,11 @@ public class ZakatAndTaxSingUpTestSuite extends ZatcaWebTest {
         ZatcaModule zatca = new ZatcaModule();
         zatca.erad.portal.taxpayer.angular.openApplication(data);
         zatca.erad.portal.taxpayer.angular.loginPage.openSignUpPage();
-        zatca.erad.portal.taxpayer.angular.accountPage.backFromCreateNewAccount();
         zatca.erad.portal.taxpayer.angular.accountPage.selectAccountType(data);
-        zatca.erad.portal.taxpayer.angular.accountPage.backFromNewOtherAccount();
         zatca.erad.portal.taxpayer.angular.accountPage.selectOtherAccountCategory(data);
+        zatca.erad.portal.taxpayer.angular.accountPage.fillConsortiumCompanyOrganizationInformationDetails(data);
+        zatca.erad.portal.taxpayer.angular.accountPage.fillConsortiumCompanyContactInformationDetails(data);
+        zatca.erad.portal.taxpayer.angular.accountPage.fillConsortiumCompanyCaptcha();
+        zatca.erad.portal.taxpayer.angular.accountPage.continueOrganizationInformationDetails();
     }
 }

@@ -26,6 +26,6 @@ public class TaxPayerAnugularLoginPage {
 
     public void openSignUpPage() {
         Actions.waitForElementAtIntervals(Link_SignUp, 1, 1);
-        Actions.click(Link_SignUp);
+        Actions.click(Link_SignUp, "Clicked SignUp Link.");
     }
 }
